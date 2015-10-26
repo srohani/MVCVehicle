@@ -12,7 +12,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    
+    Vehicle *vehicle = [[Vehicle alloc] init];
+    //test methods with implementation
+    NSLog(@"Vehicle turn %@", [vehicle turn:700]);
+    NSLog(@"Vehicle change gears to %@", [vehicle changeGears:@"test"]);
+    
+    //test methods without implementation
+    NSLog(@"Vehicle make noise %@", [vehicle makeNoise]);
+    NSLog(@"Vehicle go forward %@", [vehicle goForward]);
+    NSLog(@"Vehicle go backward %@", [vehicle goBackward]);
+    NSLog(@"Vehicle stop moving %@", [vehicle stopMoving]);
+    
     return YES;
 }
 							
